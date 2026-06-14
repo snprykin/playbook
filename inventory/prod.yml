@@ -1,0 +1,6 @@
+---
+all:
+  hosts:
+    clickhouse-server:
+      ansible_host: 192.168.212.128 #51.250.11.22    # ← ЗАМЕНИ НА СВОЙ IP
+      ansible_user: root

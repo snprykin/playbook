@@ -1,0 +1,5 @@
+---
+# vars file for lighthouse-role
+lighthouse_web_root: "{{ lighthouse_install_dir }}/build"
+lighthouse_nginx_config: "/etc/nginx/sites-available/lighthouse"
+lighthouse_nginx_enabled: "/etc/nginx/sites-enabled/lighthouse"

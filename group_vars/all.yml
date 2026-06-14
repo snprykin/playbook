@@ -1,0 +1,16 @@
+---
+clickhouse_version: "22.3"
+clickhouse_listen_host: "0.0.0.0"
+clickhouse_http_port: 8123
+clickhouse_tcp_port: 9000
+clickhouse_databases:
+  - name: logs
+
+vector_version: "0.31.0"
+vector_clickhouse_host: "127.0.0.1"
+vector_clickhouse_port: 8123
+vector_clickhouse_database: "logs"
+vector_clickhouse_table: "nginx_logs"
+
+lighthouse_nginx_port: 80
+lighthouse_server_name: "_"

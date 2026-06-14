@@ -1,0 +1,21 @@
+---
+- name: Deploy monitoring stack
+  hosts: all
+  become: true
+  tasks:
+    - name: Install ClickHouse
+      ansible.builtin.include_role:
+        name: clickhouse
+
+    - name: Create logs database in ClickHouse
+      ansible.builtin.command:
+        cmd: clickhouse-client -q "CREATE DATABASE IF NOT EXISTS logs"
+      changed_when: false
+
+    - name: Install Vector
+      ansible.builtin.include_role:
+        name: vector-role
+
+    - name: Install Lighthouse
+      ansible.builtin.include_role:
+        name: lighthouse-role

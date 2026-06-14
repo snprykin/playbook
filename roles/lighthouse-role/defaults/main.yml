@@ -1,0 +1,11 @@
+---
+# defaults file for lighthouse-role
+lighthouse_version: "master"
+lighthouse_repo_url: "https://github.com/VKCOM/lighthouse.git"
+lighthouse_install_dir: "/opt/lighthouse"
+lighthouse_user: "lighthouse"
+lighthouse_group: "lighthouse"
+lighthouse_nginx_port: 80
+lighthouse_server_name: "_"
+lighthouse_access_log: "/var/log/nginx/lighthouse_access.log"
+lighthouse_error_log: "/var/log/nginx/lighthouse_error.log"
